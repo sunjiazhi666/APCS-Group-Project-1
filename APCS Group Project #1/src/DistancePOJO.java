@@ -3,11 +3,13 @@ public class DistancePOJO
 	{
 		private String name;
 		private double oneMeterEqual;
+		private double equalToHowManyMeter;
 	
 		
-		public DistancePOJO (String n, double c){
+		public DistancePOJO (String n, double c, double e){
 			name = n;
 			oneMeterEqual = c;
+			equalToHowManyMeter = e;
 			
 		}
 
@@ -24,15 +26,29 @@ public class DistancePOJO
 			}
 
 
-		public String getConverToMeter()
+		public double getOneMeterEqual()
 			{
-				return converToMeter;
+				return oneMeterEqual;
 			}
 
 
-		public void setConverToMeter(String converToMeter)
+		public void setOneMeterEqual(double oneMeterEqual)
 			{
-				this.converToMeter = converToMeter;
+				this.oneMeterEqual = oneMeterEqual;
 			}
+
+
+		public double getEqualToHowManyMeter()
+			{
+				return equalToHowManyMeter;
+			}
+
+
+		public void setEqualToHowManyMeter(double equalToHowManyMeter)
+			{
+				this.equalToHowManyMeter = equalToHowManyMeter;
+			}
+
+	}
 
 	
